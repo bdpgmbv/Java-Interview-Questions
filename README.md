@@ -43,4 +43,6 @@
    * Shared: No (Each thread has its own native method stack)
  
 6. What is JIT compiler ?
-Just In Time compiler is a key part of the JVM that makes Java program run faster
+* Just In Time compiler is a key part of the JVM that makes Java programs run faster by converting freuently executed bytecode into optimzed machine code at runtime.
+
+7. 
