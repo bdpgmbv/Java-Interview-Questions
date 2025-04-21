@@ -112,17 +112,68 @@
   * When to use ?
     * When a variable should be common for all objects (e.g., configuration settings)
     * Avoids redundant memory usage
+```java
+class Employee {
+    static String company = "Google"; // Shared by all employees
+    String name;
+    Employee(String name) {
+        this.name = name;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        Employee e1 = new Employee("Alice");
+        Employee e2 = new Employee("Bob");
+        System.out.println(e1.company); // Google (but not recommended)
+        System.out.println(Employee.company); // Google (correct way)
+    }
+}
+```
 * Static Methods
   * Belongs to the class, not instances
   * Can be called without creating an object - Accessed using the class name. 
     * Cannot access non-static members directly (because they dont belong to any object).
     * When to use ?
       * For utility functions (e.g., Math.max(), Collections.sort())
+```java
+class MathUtils {
+    static int add(int a, int b) {
+        return a + b;
+    }
+}
+public class Main {
+    public static void main(String[] args) {
+        int sum = MathUtils.add(5, 3); // No object needed
+        System.out.println(sum); // 8
+    }
+}
+
+
+class Test {
+    int x = 10;
+    static void printX() {
+        System.out.println(x); // Error (non-static variable)
+    }
+}
+```
 * static block
   * Runs once when the class is loaded (before main())
   * Used for static initialization (e.g., loading config files)
+```java
+class Database {
+    static {
+        System.out.println("Loading database drivers...");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Main method starts");
+        new Database(); // Triggers static block
+    }
+}
+```
 * static Nested class
-  * A nested class marked static does not need an outer class instance.
-  * Unlike inner classes, it cannot access non-static members of the outer class.
+  * Unlike a regular inner class, it does not require an instance of the outer class and cannot access non-static members of the outer class directly. 
 
 
