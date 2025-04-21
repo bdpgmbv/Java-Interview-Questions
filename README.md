@@ -88,7 +88,16 @@
 * Safety: Prevents NullPointerException in the main method.
 
 15. What if we write static public void instead of public static void?
-* Java allows modifiers (public, static, final, etc.) in any order because they are independent of each other.
+* Java allows ACCESS MODIFIERS (public, private, protected) and OTHER SPECIFIERS (static, final, etc.) BEFORE THE RETURN TYPE to be in any order because they are independent of each other.
 * The compiler only enforces that:
  * The return type (void, int, etc.) must appear right before the method name.
  * The method name + parameters follow correctly.
+
+16. What is the default value of the local variables ?
+* In java, local variables are not assigned default values by the compiler.
+* They must be explicitly initialized before they are used, or a compilation error will occur.
+
+17. What are the various access specifiers in Java?
+* private: accessible only within the same class
+* default: accessible only within the same package (if no access modifier is specified, it becomes default).
+* protected: accessible within the same class, same package, and subclasses (even in different package)
