@@ -20,4 +20,24 @@
 * JDK
   * Provides tools to develop, compile, and run Java Programs.
   * Includes: JRE (so you can run java programs) + Compiler (converts .java -> .class) + debugger, javadoc, jar, etc. (development tools).
-  * !!!! JDK = JRE + Development tools (Compiler, Debugger, ..)
+  * !!!! JDK = JRE + Development tools (Compiler, Debugger, etc.,) !!!!
+ 
+6. How many types of memory areas are allocated by the JVM?
+
+1. Method Area (Class Area):
+   * Purpose: Stores class level data (like static variables, constructors, method data, bytecode, constant pool)
+   * Shared: Yes (Shared across all threads)
+2. Heap Area
+   * Purpose: Stores all objects and arrays.
+   * Shared: Yes (Shared across all threads)
+   * Managed by: Garbage Collector (GC)
+3. Stack Area
+   * Purpose: Stores method calls, local variables, and partial results.
+   * Shared: No (each thread has its own stack)
+4. Program Counter(PC) Register
+   * Purpose: Keeps track of current instruction being executed in a thread.
+   * Shared: No (each thread has its own PC register)
+   * Note: If the method is native, PC register is undefined.
+5. Native method stack
+   * Purpose: Stored native method calls (non-java code, like C/C++)
+   * Shared: No (Each thread has its own native method stack)
