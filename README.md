@@ -11,6 +11,8 @@
   * Converts (.class) bytecode into machine code and executes it. 
   * Manages memory (Heap, Stack, Garbage Collection)
   * Provides security by verifying bytecode.
-  * !!!! JVM alone is not enough to run or develop java program
+  * !!!! JVM alone is not enough to run or develop java program !!!!
 * JRE
-  * 
+  * Provides the minimum environment to run java program
+  * Includes: JVM (to execute bytecode) + libraries (for core java classes)
+  * Used by: end users who only need to run java apps (not 
