@@ -15,4 +15,6 @@
 * JRE
   * Provides the minimum environment to run java program
   * Includes: JVM (to execute bytecode) + libraries (for core java classes)
-  * Used by: end users who only need to run java apps (not 
+  * Used by: end users who only need to run java apps (not develop them)
+  * !!!! JRE = JVM + Libraries (to run Java apps, but no compiler) 
+* 
