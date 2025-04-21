@@ -41,3 +41,6 @@
 * Native method stack
    * Purpose: Stored native method calls (non-java code, like C/C++)
    * Shared: No (Each thread has its own native method stack)
+ 
+6. What is JIT compiler ?
+Just In Time compiler is a key part of the JVM that makes Java program run faster
