@@ -103,4 +103,26 @@
 * protected: accessible within the same class, same package, and subclasses (EVEN IN DIFFERENT PACKAGE).
 * public: accessible from anywhere 
 
-18. 
+18. What is the purpose of static methods and variables ?
+* static is a keyword in java used to define CLASS-LEVEL MEMBERS (methods and variables) that belong to the class itself rather than individual instances.
+* Static varibles
+ * Shared across all instances of the class.
+ * Only one copy exist in memory, regardless of how many objects are created.
+ * Accessed using the class name.
+ * When to use ?
+   * When a variable should be common for all objects (e.g., configuration settings)
+   * Avoids redundant memory usage
+* Static Methods
+   * Belongs to the class, not instances
+   * Can be called without creating an object - Accessed using the class name. 
+   * Cannot access non-static members directly (because they dont belong to any object).
+   * When to use ?
+     * For utility functions (e.g., Math.max(), Collections.sort())
+* static block
+  * Runs once when the class is loaded (before main())
+  * Used for static initialization (e.g., loading config files)
+* static Nested class
+  * A nested class marked static does not need an outer class instance.
+  * Unlike inner classes, it cannot access non-static members of the outer class.
+
+
