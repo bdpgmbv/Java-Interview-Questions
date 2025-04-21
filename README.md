@@ -75,20 +75,20 @@
     * Loads: Classes from the classpath (your application code).
 
 12. Is an empty .java file name a valid source file name ?
-* Yes, in Java, the source file can be saved with the .java extension.
-* Compile the code using the javac command: javac Main.java
-* Run the code using the java command: java main
-
-```java
-public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello, World!");
-    }
-}
-```
-* save by .java only
-* compile by javac Main.java
-* run by java Main
+* An empty .java filename is not valid in Java.
+* The filename must contain at least one character before the .java extension.
+* Must match the public class name (if present) – If the file contains a public class, the filename must exactly match the class name (case-sensitive).
 
 13. Is delete, next, main, exit or null keyword in java ?
-* 
+* No, in Java, delete, next, main, exit, and null are not keywords.
+
+14. If I do not provide any arguments on the command line, then what will the value stored in the String array passed into the main() method, empty or NULL?
+* args is never null → The JVM INITIALIZES it as an EMPTY ARRAY if no arguments are provided.
+* args.length == 0 → Indicates no arguments were passed.
+* Safety: Prevents NullPointerException in the main method.
+
+15. What if we write static public void instead of public static void?
+* Java allows modifiers (public, static, final, etc.) in any order because they are independent of each other.
+* The compiler only enforces that:
+ * The return type (void, int, etc.) must appear right before the method name.
+ * The method name + parameters follow correctly.
