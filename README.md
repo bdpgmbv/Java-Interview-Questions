@@ -48,3 +48,28 @@
 8. What is the Platform ?
 * A platform refers to the combination of hardware and software on which programs run.
 * In the context of java, the platform includes the operating system and the Java Virtual Machine.
+
+9. What are the main differences between the Java platform and other platforms ?
+* Java is platform independent due to it "Write Once, Run anywhere" nature.
+* Other platforms may require PLATFORM-SPECIFIC CODE AND COMPILATION FOR EACH TARGET ENVIRONMENT. 
+
+10. What gives Java its 'write once and run anywhere' nature ?
+* Java COMPILER CONVERTS the java program into class files (bytecode).
+* Which is the intermediate state between SOURCE CODE AND MACHINE CODE.
+* Bytecode is platform independent, and JVM executes this bytecode on any device with a compatible JVM.
+
+11. What is a classloader?
+* The classloader is a CORE PART OF THE JVM that loads classes into memory when they are needed.
+* It ensures that the correct bytecode (.class files) is available for execution.
+
+* The JVM uses 3 built-in class loaders in a hierarchy:
+  * BootStrap ClassLoader
+    * Parent: None (top-level)
+    * Loads: Core java classes (java.lang, java.util etc.,)
+    * Written in: Native code (not java)
+  * Extension ClassLoader
+    * Parent: BootStrap
+    * Loads: Jars from jre/lib/ext (extension libraries)
+  * Application ClassLoader
+    * Parent: Extension
+    * Loads: Classes from the classpath (your application code).
