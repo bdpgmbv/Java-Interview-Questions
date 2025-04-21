@@ -73,3 +73,22 @@
   * Application ClassLoader
     * Parent: Extension
     * Loads: Classes from the classpath (your application code).
+
+12. Is an empty .java file name a valid source file name ?
+* Yes, in Java, the source file can be saved with the .java extension.
+* Compile the code using the javac command: javac Main.java
+* Run the code using the java command: java main
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+```
+* save by .java only
+* compile by javac Main.java
+* run by java Main
+
+13. Is delete, next, main, exit or null keyword in java ?
+* 
