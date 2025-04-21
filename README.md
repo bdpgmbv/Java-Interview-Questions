@@ -100,7 +100,7 @@
 17. What are the various access specifiers in Java?
 * private: accessible only within the same class
 * default: accessible only within the same package (if no access modifier is specified, it becomes default).
-* protected: accessible within the same class, same package, and subclasses (even in different package).
+* protected: accessible within the same class, same package, and subclasses (EVEN IN DIFFERENT PACKAGE).
 * public: accessible from anywhere 
 
 18. 
