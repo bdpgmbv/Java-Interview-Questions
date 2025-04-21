@@ -16,5 +16,8 @@
   * Provides the minimum environment to run java program
   * Includes: JVM (to execute bytecode) + libraries (for core java classes)
   * Used by: end users who only need to run java apps (not develop them)
-  * !!!! JRE = JVM + Libraries (to run Java apps, but no compiler) 
-* 
+  * !!!! JRE = JVM + Libraries (to run Java apps, but no compiler) !!!!
+* JDK
+  * Provides tools to develop, compile, and run Java Programs.
+  * Includes: JRE (so you can run java programs) + Compiler (converts .java -> .class) + debugger, javadoc, jar, etc. (development tools).
+  * !!!! JDK = JRE + Development tools (Compiler, Debugger, ..)
