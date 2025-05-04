@@ -19,7 +19,21 @@
 
 6. How many types of memory areas are allocated by the JVM?
 * stack - method calls, local variables 
-* heap - objects, arrays 
+* heap - objects, arrays (shared across threads)
 * program counter register - current execution address 
-* native method stack - 
-* Method area - class metadata, static variables 
+* native method stack - Used for native method (written in C/C++)
+* Method area - class metadata, static variables (shared across threads)
+
+7. What is JIT compiler?
+* JVM interprets bytecode line by line 
+* JIT compiler identifies hotspots(frequently executed code)
+* Compiles these hotspot into optimized native machine code
+
+8. What is the platform?
+* Combination of software and hardware on which programs run 
+
+9. What are the main differences between the Java platform and other platforms?
+* java is write once run anywhere
+* other programming languages may be need platform specific code/compilation
+
+10. 
