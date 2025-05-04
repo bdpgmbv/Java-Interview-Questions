@@ -21,3 +21,9 @@
 * static nested class - cant be accessed without outer class object
 
 * static members are stored in method area of the JVM memory
+
+4. Access Specifiers
+* public - No restriction - global access
+* protected - Package + subclasses access (same package, diff package)
+* default - package only access
+* private - class only access 
