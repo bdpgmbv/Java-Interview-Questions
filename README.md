@@ -67,5 +67,21 @@
 * In java, default values are never specified by the compiler
 
 ```
-
+public class Main {
+  public static void main(String[] args) {
+    int x;
+    System.out.println(x); // compilation error 
+  }
+}
 ```
+
+17. What are the various access specifiers in Java?
+* public - no restriction - global access
+* protected - package + subclasses (same package, diff package)
+* default - package only access
+* private - class only access
+
+18. What is the purpose of static methods and variables?
+* create class level members - belongs to the class itself and not individual objects
+* saves memory - as only one copy exists
+* can be called without creating objects 
