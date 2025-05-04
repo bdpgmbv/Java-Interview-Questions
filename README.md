@@ -85,3 +85,46 @@ public class Main {
 * create class level members - belongs to the class itself and not individual objects
 * saves memory - as only one copy exists
 * can be called without creating objects 
+
+19. What are the advantages of packages in Java?
+* Organize classes - like folders 
+* Prevent name clashes - same class names allowed in different packages
+* Hide sensitive code - only share whats needed
+* reuse code - import and use classes easily
+
+20. What is the output of the following Java program?
+* System.out.println(10 + 20 + "Tpointtech");   // 30Tpointtech
+* System.out.println("Tpointtech" + 10 + 20);  // Tpointtech1020
+
+21. What is the output of the following Java program?
+* System.out.println(10 * 20 + "Tpointtech");   // 200Tpointtech
+* System.out.println("Tpointtech" + 10 * 20); // Tpointtech200
+
+22. What is the output of the following Java program?
+```java
+for(int i=0; 0; i++) {  
+  System.out.println("Hello Tpointtech");  
+}  
+```
+* compilation error due to the non-boolean expression in the second part of the for loop
+
+23. What is an object-oriented paradigm?
+* writing programs by modelling them after real world objects
+* Objects have - properties (what they are) and behaviour (what they do)
+
+24. What is an object?
+* modelled after real world objects
+* have properties (variables) and behavious (methods)
+
+25. What is the difference between an object-oriented programming language and an object-based programming language?
+* OOP = objects + inheritance + polymorphism
+* OBP = only objects
+
+26. What will be the initial value of an object reference that is defined as an instance variable?
+* null
+
+27. What is the constructor?
+* special method
+* called when the object is created
+* when object is created with new keyword - default constructor is called
+
