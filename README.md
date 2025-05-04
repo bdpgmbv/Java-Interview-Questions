@@ -33,7 +33,12 @@
 * Combination of software and hardware on which programs run 
 
 9. What are the main differences between the Java platform and other platforms?
-* java is write once run anywhere
+* Java is write once run anywhere
 * other programming languages may be need platform specific code/compilation
 
-10. 
+10. What gives Java its 'write once and run anywhere' nature?
+* Java compiler converts Java code to class files(byte code)
+* Intermediate language between Java code and the machine code is bytecode
+* byte makes java platform independent, and can be executed in any platform with a compatible JVM
+
+11. 
