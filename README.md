@@ -41,4 +41,31 @@
 * Intermediate language between Java code and the machine code is bytecode
 * byte makes java platform independent, and can be executed in any platform with a compatible JVM
 
-11. 
+11. What is a classloader ?
+* Loads classes into memory during runtime
+* Bootstrap classloader: Loads all the jar files of Java Standard Edition
+* Extension classloader: Loads all the jar files located in $JAVA_HOME/jre/lib/ext
+* Application classloader: Loads all the jar files from the classpath
+
+12. Is an empty .java file name a valid source file name?
+* No, its not a valid file name - file name must match a class name.
+
+13. Is delete, next, main, exit, or null keyword in Java?
+* No delete, next, main, exit are not keywords and can be used as variables/method names 
+* Null is a reserved literal
+
+14. If I do not provide any arguments on the command line, then what will the value stored in the String array passed into the main() method, empty or NULL?
+* args[] will be empty, not null
+* JVM initializes args to an empty array to prevent nullpointerexception in case of argument checks
+
+15. What if we write static public void instead of public static void ?
+* access specifiers (public, private, protected)
+* other specifiers (static, final, etc)
+* Both of the above before the return type (void) is flexible
+
+16. What is the default value of the local variables?
+* In java, default values are never specified by the compiler
+
+```
+
+```
