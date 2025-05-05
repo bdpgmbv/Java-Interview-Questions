@@ -159,6 +159,7 @@ for(int i=0; 0; i++) {
     * By assigning the values of one object to another
     * By using Object.clone() Method
 
+39. What is the static variable?
 
 
 
