@@ -214,7 +214,7 @@ for(int i=0; 0; i++) {
 * this = null;     // compiler error
 
 54. Can this keyword be used to refer to static members?
-* 
+* Yes, it is possible to use this keyword to refer to static members because it is just a reference variable that refers to the current class object
 
 
 
