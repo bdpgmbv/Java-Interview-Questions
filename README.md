@@ -124,7 +124,41 @@ for(int i=0; 0; i++) {
 * null
 
 27. What is the constructor?
-* special method
-* called when the object is created
-* when object is created with new keyword - default constructor is called
+* constructor in java is a special method that:
+    * Automatically runs when an object is created (with new)
+    * Initializes the object's properties (sets default values)
+    * has the same name as class
+
+28. How many types of constructors are used in Java?
+* default constructor - created automatically by java if no constructor is defined. Intializes fields to default values (0, null, false) 
+* parameterized constructor - takes arguments to intialize objects with custom values 
+
+29. What is the purpose of a default constructor?
+* created automatically by java if no constructor is defined.
+* assigns default value to fields/properties (0, null, false)
+
+30. Does the constructor return any value?
+* No, not even void
+
+31. Is the constructor inherited?
+* No, constructors are not inherited in Java.
+* Constructors are special methods tied to their own class.
+
+32. Can you make a constructor final?
+* No, you cannot declare a constructor as final in Java.
+* Constructors are implicitly final (they cannot be overridden).
+
+33. Can we overload the constructors?
+* Yes! You can overload constructors in Java, just like method overloading.
+* This means a class can have multiple constructors with different parameters.
+
+34. What do you understand by copy constructor in Java?
+* There is no copy constructor in Java.
+* There are many ways to copy the values of one object into another in Java. They are:
+    * By using a constructor
+    * By assigning the values of one object to another
+    * By using Object.clone() Method
+
+
+
 
