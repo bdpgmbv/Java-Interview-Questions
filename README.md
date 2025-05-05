@@ -160,6 +160,61 @@ for(int i=0; 0; i++) {
     * By using Object.clone() Method
 
 39. What is the static variable?
+* static variable - Shared by all objects - changed it once, it updates for all objects
+
+40. What is the static method?
+* static method - can be called without objects - can only call other static methods - can only access static variables - cannot use this or super keywords
+
+41. What are the restrictions that are applied to the Java static methods?
+* can only call other static methods - can only access static variables - cannot use this or super keywords
+* Cannot Be Overridden (But Can Be Hidden) - If a subclass defines the same static method, it hides the parent's version (not overrides).
+* Static methods must have a body; they can't be abstract.
+
+42. Why the main() method is static?
+* No Object Needed for Execution - If it weren’t static, the JVM would have to first create an object
+* Standardized Entry Point - The JVM looks specifically for public static void main(String[] args).
+
+43. Can we override the static methods?
+* Cannot Be Overridden (But Can Be Hidden) - If a subclass defines the same static method, it hides the parent's version (not overrides).
+
+44. What is the static block?
+* static blocks - runs when the class loads (e.g., loading config files)
+* It is executed before the execution of the main() method
+
+45. Can we execute a program without a main() method?
+* No, in Java, we cannot execute a program without the main() method.
+* The JVM looks for the main() method with the following signature to begin program execution
+
+46. What if the static modifier is removed from the signature of the main method?
+* he program will compile successfully, but it will not run successfully.
+
+48. Can we make constructors static?
+* No, constructors cannot be static in Java.
+* Constructors are for object creation → They initialize instance-specific state.
+* static belongs to the class → It’s unrelated to object initialization.
+
+49. Can we make the abstract methods static in Java?
+* No, Since abstract methods are expected to be overridden by subclasses, making them static would be contradictory to their purpose.
+* Calling an undefined method is completely useless; therefore, it is not allowed.
+
+50. Can we declare the static variables and methods in an abstract class?
+* Static members work normally in abstract classes.
+* They belong to the class, not instances, so they don’t conflict with abstraction.
+
+51. What is this keyword in Java?
+52. What are the uses of this keyword?
+* reference to the current object
+* Solving Name Conflicts - this.name = name;
+* Calling Current Object's Methods - this.start(); // Calls start() on the same object
+* Passing Current Object as a Parameter - School.enroll(this); // Passes this Student object
+* Constructor Chaining - this(type); // Calls first constructor
+
+53. Can we assign the reference to this variable?
+* No, it is not possible to assign a new value to this variable in Java.
+* this = null;     // compiler error
+
+54. Can this keyword be used to refer to static members?
+* 
 
 
 
